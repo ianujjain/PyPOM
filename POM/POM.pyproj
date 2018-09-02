@@ -2,15 +2,16 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>a7914e2f-3ed9-4f13-9a8f-af3b20e2b897</ProjectGuid>
+    <ProjectGuid>cb1bda36-4b82-4710-b709-4a84caa6976c</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>TestCases\TCLogin.py</StartupFile>
+    <StartupFile>
+    </StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
     <OutputPath>.</OutputPath>
-    <Name>POMAutomation</Name>
-    <RootNamespace>POMAutomation</RootNamespace>
+    <Name>POM</Name>
+    <RootNamespace>POM</RootNamespace>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <DebugSymbols>true</DebugSymbols>
@@ -21,37 +22,22 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="WebPageEntities\Login.py">
+    <Compile Include="Helper\HelperDateTime.py" />
+    <Compile Include="Helper\__init__.py" />
+    <Compile Include="WebBasePages\PageBase.py">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="WebPageEntities\__init__.py">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="WebPages\Login.py">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="POMAutomation.py" />
-    <Compile Include="TestCases\TCLogin.py">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="TestCases\__init__.py">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="WebPages\__init__.py">
+    <Compile Include="WebBasePages\__init__.py">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="TestCases\" />
-    <Folder Include="WebPageEntities\" />
-    <Folder Include="WebPages\" />
+    <Folder Include="Drivers\" />
+    <Folder Include="Helper\" />
+    <Folder Include="WebBasePages\" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\POM\POM.pyproj">
-      <Name>POM</Name>
-      <Project>{cb1bda36-4b82-4710-b709-4a84caa6976c}</Project>
-      <Private>True</Private>
-    </ProjectReference>
+    <Content Include="Drivers\chromedriver.exe" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in
