@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28010.2016
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "POMAutomation", "POMAutomation\POMAutomation.pyproj", "{A7914E2F-3ED9-4F13-9A8F-AF3B20E2B897}"
-EndProject
 Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "POM", "POM\POM.pyproj", "{CB1BDA36-4B82-4710-B709-4A84CAA6976C}"
+EndProject
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "OrangeHRM", "OrangeHRM\OrangeHRM.pyproj", "{38B8782D-E7C7-4772-874B-6F9B597F655F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -13,10 +13,10 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{A7914E2F-3ED9-4F13-9A8F-AF3B20E2B897}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{A7914E2F-3ED9-4F13-9A8F-AF3B20E2B897}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CB1BDA36-4B82-4710-B709-4A84CAA6976C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{CB1BDA36-4B82-4710-B709-4A84CAA6976C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{38B8782D-E7C7-4772-874B-6F9B597F655F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{38B8782D-E7C7-4772-874B-6F9B597F655F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
