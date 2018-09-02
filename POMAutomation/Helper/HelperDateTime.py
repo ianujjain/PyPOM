@@ -56,3 +56,6 @@ class HelperDateTime(object):
         else:
             CurrentDateTime = datetime.datetime.now()
         return CurrentDateTime.strftime(DateTimeFormat);
+
+    def GetRandomDate():
+        pass;

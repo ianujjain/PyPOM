@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>a7914e2f-3ed9-4f13-9a8f-af3b20e2b897</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>POMAutomation.py</StartupFile>
+    <StartupFile>TestCases\TCLogin.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -27,10 +27,42 @@
     <Compile Include="Helper\__init__.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Locatars\Login.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Locatars\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WebPages\LoginPage.py" />
+    <Compile Include="WebPages\Page.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Page\LoginPage.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Page\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="POMAutomation.py" />
+    <Compile Include="TestCases\TCLogin.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TestCases\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WebPages\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Helper\" />
+    <Folder Include="Drivers\" />
+    <Folder Include="Locatars\" />
+    <Folder Include="TestCases\" />
+    <Folder Include="WebPages\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Drivers\chromedriver.exe" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in
