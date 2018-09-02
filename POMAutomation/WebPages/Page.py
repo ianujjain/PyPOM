@@ -7,8 +7,6 @@ class Page():
 
     def FindElements(self, *locator):
         return self.Driver.find_element(*locator)
-
-    #AttributeError("'LoginPage' object has no attribute 'driver'")
         
 
 
