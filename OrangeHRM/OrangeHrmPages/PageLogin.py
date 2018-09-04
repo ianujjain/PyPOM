@@ -16,6 +16,20 @@ class PageLogin(Page):
     def ClickOnSubmit(self):
         self.FindElement(*self.Locator.Submit).click()
 
+    def ErrorMsgInvalidCredentials(self):
+        return self.FindElement(*self.Locator.ErrorMessage).text
+
+    def ErrorMsgUsernameCannotBeEmpty(self):
+        return self.FindElement(*self.Locator.ErrorMessage).text
+
+    def UsernameCannotBeEmptyLogin(self):
+        self.ClickOnSubmit();
+        return self.ErrorMsgUsernameCannotBeEmpty();
+
+    def InvalidCredentialsLogin(self,username,password):
+        self.Login(username,password)
+        return self.ErrorMsgUsernameCannotBeEmpty();
+
     def Login(self,username,password):
         self.EnterUserName(username)
         self.EnterPassword(password)
