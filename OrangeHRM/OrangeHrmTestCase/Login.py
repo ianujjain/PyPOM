@@ -24,8 +24,8 @@ class Test_TCLogin(unittest.TestCase):
         time.sleep(5)
         self.assertEqual(ErrorMessage, "Invalid credentials",'Incorrect Error Message: Invalid credentials')
 
-    def test_C_ValidateLoginWithValidUser(self):
-        self.ObjPageLogin.Login("Admin","admin123")
+    #def test_C_ValidateLoginWithValidUser(self):
+        #self.ObjPageLogin.Login("Admin","admin123")
 
     @classmethod
     def tearDownClass(inst):
