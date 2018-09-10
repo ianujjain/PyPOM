@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>1202a7a9-9d5f-4740-b4ad-d8fecd6472f9</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>PhpTravelsTestCase\Login.py</StartupFile>
+    <StartupFile>PhpTravelsTestCase\__init__.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>

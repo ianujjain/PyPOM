@@ -1,9 +1,11 @@
 from OrangeHrmPages.PageLogin import PageLogin
+import subprocess
 import unittest
 from selenium import webdriver
 import HtmlTestRunner
 import pytest
 import time
+import sys
 
 
 class Test_TCLogin(unittest.TestCase):
@@ -33,4 +35,7 @@ class Test_TCLogin(unittest.TestCase):
         inst.driver.quit()
  
 if __name__ == '__main__':
+
+    suite = unittest.TestLoader().loadTestsFromTestCase(Test_TCLogin)
+    unittest.TextTestRunner().run(suite)
     unittest.main(testRunner=HtmlTestRunner.HTMLTestRunner(output='D:\\'),exit=False)

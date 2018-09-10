@@ -4,8 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>cb1bda36-4b82-4710-b709-4a84caa6976c</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>
-    </StartupFile>
+    <StartupFile>module1.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -24,6 +23,15 @@
   <ItemGroup>
     <Compile Include="Helper\HelperDateTime.py" />
     <Compile Include="Helper\__init__.py" />
+    <Compile Include="module1.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Utilities\FileIOUtility.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Utilities\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="WebBasePages\PageBase.py">
       <SubType>Code</SubType>
     </Compile>
@@ -34,6 +42,7 @@
   <ItemGroup>
     <Folder Include="Drivers\" />
     <Folder Include="Helper\" />
+    <Folder Include="Utilities\" />
     <Folder Include="WebBasePages\" />
   </ItemGroup>
   <ItemGroup>
